@@ -146,6 +146,7 @@ class EditProfile extends Component {
           type="text"
           className="form-control"
           value={about}
+          rows="4" cols="50"
         />
       </div>
 

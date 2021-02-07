@@ -116,7 +116,7 @@ class Signin extends Component {
 
             <button
                 onClick={this.clickSubmit}
-                className="btn btn-raised btn-primary"
+                className="btn btn-raised btn-primary m-0"
             >
                 Submit
             </button>
@@ -139,7 +139,7 @@ class Signin extends Component {
 
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">SignIn</h2>
+                <h5 className="mt-5 mb-1">SignIn to <strong className="text-primary">Blogify</strong></h5>
                 <hr />
                 <SocialLogin />
 
@@ -166,7 +166,7 @@ class Signin extends Component {
                 <p>
                     <Link
                         to="/forgot-password"
-                        className="btn btn-raised btn-danger"
+                        className="btn btn-raised btn-danger m-0"
                     >
                         {" "}
                         Forgot Password

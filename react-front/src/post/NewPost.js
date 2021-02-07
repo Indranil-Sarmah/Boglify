@@ -99,6 +99,7 @@ class NewPost extends Component {
                     type="text"
                     className="form-control"
                     value={body}
+                    rows="7" cols="50"
                 />
             </div>
 
@@ -115,7 +116,6 @@ class NewPost extends Component {
         const {
             title,
             body,
-            photo,
             user,
             error,
             loading,

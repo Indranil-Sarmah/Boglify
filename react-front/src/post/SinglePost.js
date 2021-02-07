@@ -89,7 +89,7 @@ class SinglePost extends Component {
         const { like, likes } = this.state;
 
         return (
-            <div className="card-body">
+            <div className="card-body border border-secondary">
                 <img
                     src={`${process.env.REACT_APP_API_URL}/post/photo/${post._id}`}
                     alt={post.title}
@@ -103,21 +103,21 @@ class SinglePost extends Component {
                 />
 
                 {like ? (
-                    <h3 onClick={this.likeToggle}>
+                    <h5 onClick={this.likeToggle}>
                         <i
-                            className="fa fa-thumbs-up text-success bg-dark"
-                            style={{ padding: '10px', borderRadius: '50%' }}
+                            className="fa fa-thumbs-up text-primary bg-dark"
+                            style={{ padding: '4px', borderRadius: '50%' }}
                         />{' '}
                         {likes} Like
-                    </h3>
+                    </h5>
                 ) : (
-                    <h3 onClick={this.likeToggle}>
+                    <h5 onClick={this.likeToggle}>
                         <i
-                            className="fa fa-thumbs-up text-warning bg-dark"
-                            style={{ padding: '10px', borderRadius: '50%' }}
+                            className="fa fa-thumbs-up text-light bg-primary"
+                            style={{ padding: '4px', borderRadius: '50%' }}
                         />{' '}
                         {likes} Like
-                    </h3>
+                    </h5>
                 )}
 
                 <p className="card-text">{post.body}</p>

@@ -9,14 +9,14 @@ class ProfileTabs extends Component {
             <div>
                 <div className="row">
                     <div className="col-md-4">
-                        <h3 className="text-primary">
+                        <h5 className="text-primary font-weight-bold">
                             {followers.length} Followers
-                        </h3>
+                        </h5>
                         <hr />
                         {followers.map((person, i) => (
                             <div key={i}>
                                 <div>
-                                    <Link to={`/user/${person._id}`}>
+                                    <Link to={`/user/${person._id}`} style={{ textDecoration: 'none' }}>
                                         <img
                                             style={{
                                                 borderRadius: "50%",
@@ -34,9 +34,9 @@ class ProfileTabs extends Component {
                                             alt={person.name}
                                         />
                                         <div>
-                                            <p className="lead">
+                                            <h5 className="lead">
                                                 {person.name}
-                                            </p>
+                                            </h5>
                                         </div>
                                     </Link>
                                 </div>
@@ -45,14 +45,14 @@ class ProfileTabs extends Component {
                     </div>
 
                     <div className="col-md-4">
-                        <h3 className="text-primary">
+                        <h5 className="text-primary font-weight-bold mb-2">
                             {following.length} Following
-                        </h3>
+                        </h5>
                         <hr />
                         {following.map((person, i) => (
                             <div key={i}>
                                 <div>
-                                    <Link to={`/user/${person._id}`}>
+                                    <Link to={`/user/${person._id}`} style={{ textDecoration: 'none'}} >
                                         <img
                                             style={{
                                                 borderRadius: "50%",
@@ -70,9 +70,9 @@ class ProfileTabs extends Component {
                                             alt={person.name}
                                         />
                                         <div>
-                                            <p className="lead">
+                                            <h5 className="lead">
                                                 {person.name}
-                                            </p>
+                                            </h5>
                                         </div>
                                     </Link>
                                 </div>
@@ -81,14 +81,14 @@ class ProfileTabs extends Component {
                     </div>
 
                     <div className="col-md-4">
-                        <h3 className="text-primary">{posts.length} Posts</h3>
+                        <h5 className="text-primary font-weight-bold">{posts.length} Posts</h5>
                         <hr />
                         {posts.map((post, i) => (
                             <div key={i}>
                                 <div>
-                                    <Link to={`/post/${post._id}`}>
+                                    <Link to={`/post/${post._id}`} style={{ textDecoration: 'none' }}>
                                         <div>
-                                            <p className="lead">{post.title}</p>
+                                            <h5 className="lead">{post.title}</h5>
                                         </div>
                                     </Link>
                                 </div>

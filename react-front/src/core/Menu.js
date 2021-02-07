@@ -11,6 +11,11 @@ const Menu = ({ history }) => (
     <div>
         <ul className="nav nav-tabs bg-primary">
             <li className="nav-item">
+                <Link className="nav-link font-weight-bold" to="/">
+                    Blogify
+                </Link>
+            </li>
+            <li className="nav-item">
                 <Link className="nav-link" style={isActive(history, '/')} to="/">
                     Home
                 </Link>
@@ -68,7 +73,7 @@ const Menu = ({ history }) => (
                             style={isActive(history, `/user/${isAuthenticated().user._id}`)}
                             className="nav-link"
                         >
-                            {`${isAuthenticated().user.name}'s profile`}
+                            {`${isAuthenticated().user.name}`}
                         </Link>
                     </li>
 

@@ -89,7 +89,7 @@ class Profile extends Component {
 
     return (
       <div className="container">
-        <h2 className="mt-5 mb-5">Profile</h2>
+        <h3 className="mt-5 mb-5 font-weight-bold">Profile</h3>
         <div className="row">
           <div className="col-md-4">
             <img
@@ -103,9 +103,9 @@ class Profile extends Component {
 
           <div className="col-md-8">
             <div className="lead mt-2">
-              <p>Hello {user.name}</p>
+              <p>{user.name}</p>
               <p>Email: {user.email}</p>
-              <p>{`Joined ${new Date(user.created).toDateString()}`}</p>
+              <p>{`Joined Blogify on : ${new Date(user.created).toDateString()}`}</p>
             </div>
 
             {isAuthenticated().user &&

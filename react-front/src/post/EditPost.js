@@ -115,6 +115,7 @@ class EditPost extends Component {
                     type="text"
                     className="form-control"
                     value={body}
+                    rows="7" cols="50"
                 />
             </div>
 

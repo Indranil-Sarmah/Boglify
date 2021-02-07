@@ -82,9 +82,9 @@ class Signup extends Component {
     };
 
     signupForm = (name, email, password, recaptcha) => (
-        <form>
+        <form className="m-0 p-0">
             <div className="form-group">
-                <label className="text-muted">Name</label>
+                <label className="text-muted m-0">Name</label>
                 <input
                     onChange={this.handleChange("name")}
                     type="text"
@@ -93,7 +93,7 @@ class Signup extends Component {
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Email</label>
+                <label className="text-muted m-0">Email</label>
                 <input
                     onChange={this.handleChange("email")}
                     type="email"
@@ -102,7 +102,7 @@ class Signup extends Component {
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Password</label>
+                <label className="text-muted m-0">Password</label>
                 <input
                     onChange={this.handleChange("password")}
                     type="password"
@@ -112,7 +112,7 @@ class Signup extends Component {
             </div>
 
             <div className="form-group">
-                <label className="text-muted">
+                <label className="text-muted m-0">
                     {recaptcha ? "Thanks. You got it!" : "What day is today?"}
                 </label>
 
@@ -136,7 +136,10 @@ class Signup extends Component {
         const { name, email, password, error, open, recaptcha } = this.state;
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">Signup</h2>
+                <h5 className="mt-5 p-0">Signup to <strong className="text-primary">Blogify</strong></h5>
+                <p><pre><i>   "where we are connecting ideas and people"</i></pre></p>
+                
+                
 
                 <hr />
                 <SocialLogin />
@@ -156,7 +159,7 @@ class Signup extends Component {
                     style={{ display: open ? "" : "none" }}
                 >
                     New account is successfully created. Please{" "}
-                    <Link to="/signin">Sign In</Link>.
+                    <Link to="/signin" className="text-danger">Sign In</Link>.
                 </div>
 
                 {this.signupForm(name, email, password, recaptcha)}

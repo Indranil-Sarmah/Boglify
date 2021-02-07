@@ -83,7 +83,7 @@ class Comment extends Component {
 
         return (
             <div>
-                <h2 className="mt-5 mb-5">Leave a comment</h2>
+                <h4 className="mt-5 mb-3">Leave a comment</h4>
 
                 <form onSubmit={this.addComment}>
                     <div className="form-group">
@@ -108,7 +108,7 @@ class Comment extends Component {
                 </div>
 
                 <div className="col-md-12">
-                    <h3 className="text-primary">{comments.length} Comments</h3>
+                    <h5 className="text-primary"> Comments</h5>
                     <hr />
                     {comments.map((comment, i) => (
                         <div key={i}>
