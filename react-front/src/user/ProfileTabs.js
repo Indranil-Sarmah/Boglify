@@ -15,7 +15,7 @@ class ProfileTabs extends Component {
                         <hr />
                         {followers.map((person, i) => (
                             <div key={i}>
-                                <div>
+                                <div className="mt-1 mb-1 pb-1">
                                     <Link to={`/user/${person._id}`} style={{ textDecoration: 'none' }}>
                                         <img
                                             style={{
@@ -51,8 +51,8 @@ class ProfileTabs extends Component {
                         <hr />
                         {following.map((person, i) => (
                             <div key={i}>
-                                <div>
-                                    <Link to={`/user/${person._id}`} style={{ textDecoration: 'none'}} >
+                                <div className="mt-1 mb-1 pb-1">
+                                    <Link to={`/user/${person._id}`} style={{ textDecoration: 'none'}}>
                                         <img
                                             style={{
                                                 borderRadius: "50%",
@@ -85,7 +85,7 @@ class ProfileTabs extends Component {
                         <hr />
                         {posts.map((post, i) => (
                             <div key={i}>
-                                <div>
+                                <div className="mt-1 mb-1 pb-1">
                                     <Link to={`/post/${post._id}`} style={{ textDecoration: 'none' }}>
                                         <div>
                                             <h5 className="lead">{post.title}</h5>

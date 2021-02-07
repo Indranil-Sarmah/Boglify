@@ -49,10 +49,10 @@ class FindPeople extends Component {
     renderUsers = users => (
         <div className="row">
             {users.map((user, i) => (
-                <div className="card col-md-4" key={i}>
+                <div className="card col-md-3 mb-2" key={i}>
                     <img
                         style={{ height: "200px", width: "auto" }}
-                        className="img-thumbnail"
+                        className="img-thumbnail mt-2"
                         src={`${process.env.REACT_APP_API_URL}/user/photo/${
                             user._id
                         }`}
@@ -85,7 +85,7 @@ class FindPeople extends Component {
         const { users, open, followMessage } = this.state;
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">Find People</h2>
+                <h2 className="mt-5 mb-3 font-weight-bold">Find People</h2>
 
                 {open && (
                     <div className="alert alert-success">{followMessage}</div>

@@ -91,9 +91,9 @@ class Posts extends Component {
         const { posts, page } = this.state;
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">
-                    {!posts.length ? "No more posts!" : "Recent Posts"}
-                </h2>
+                <h3 className="mt-5 mb-3 font-weight-bold">
+                    {!posts.length ? "Loading.." : "Recent Posts"}
+                </h3>
 
                 {this.renderPosts(posts)}
 
