@@ -23,7 +23,7 @@ A blog project build on MERN stack where user can share there thoughts and ideas
 1. Pagination in Home page is also implented to get a clear view of all the posts.
 2. Admin panel for managing the system. 
 3. Responsive web application supports on all devices.
-4. Recaptcha in signin/signup page for prevention unauthorized acces. 
+4. Recaptcha in signin/signup page for prevention unauthorized of access. 
 
 
 This project is still on my current working list.
