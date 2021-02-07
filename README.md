@@ -1,7 +1,7 @@
 # Boglify
 A blog project build on MERN stack where user can share there thoughts and ideas.
 
-##**Features :**
+## **Features :**
 
 **Authentication:**
 1. Proper authentication system with features from google email Login by Google OAuth api.
