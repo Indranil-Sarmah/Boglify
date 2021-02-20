@@ -9,9 +9,9 @@ const isActive = (history, path) => {
 
 const Menu = ({ history }) => (
     <div>
-        <ul className="nav nav-tabs bg-primary">
+        <ul className="nav nav-tabs bg-primary p-1">
             <li className="nav-item">
-                <Link className="nav-link font-weight-bold" to="/">
+                <Link className="nav-link font-weight-bold" style={{color:'#fff'}} to="/">
                     Blogify
                 </Link>
             </li>
@@ -21,9 +21,9 @@ const Menu = ({ history }) => (
                 </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
                 <Link
-                    className={history.location.pathname === '/users' ? 'active nav-link' : 'not-active nav-link'}
+                   style={{color:'#fff'}} className={history.location.pathname === '/users' ? 'active nav-link bg-primary text-warning' : 'not-active nav-link '}
                     to="/users"
                 >
                     Users

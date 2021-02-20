@@ -105,8 +105,8 @@ class SinglePost extends Component {
                 {like ? (
                     <h5 onClick={this.likeToggle}>
                         <i
-                            className="fa fa-thumbs-up text-primary bg-dark"
-                            style={{ padding: '4px', borderRadius: '50%' }}
+                            className="fa fa-thumbs-up text-info bg-dark"
+                            style={{ padding: '5px', borderRadius: '50%' }}
                         />{' '}
                         {likes} Like
                     </h5>
@@ -114,7 +114,7 @@ class SinglePost extends Component {
                     <h5 onClick={this.likeToggle}>
                         <i
                             className="fa fa-thumbs-up text-light bg-primary"
-                            style={{ padding: '4px', borderRadius: '50%' }}
+                            style={{ padding: '5px', borderRadius: '50%' }}
                         />{' '}
                         {likes} Like
                     </h5>
@@ -127,13 +127,13 @@ class SinglePost extends Component {
                     on {new Date(post.created).toDateString()}
                 </p>
                 <div className="d-inline-block">
-                    <Link to={`/`} className="btn btn-raised btn-primary btn-sm mr-5">
+                    <Link to={`/`} className="btn btn-raised btn-primary  mr-5">
                         Back to posts
                     </Link>
 
                     {isAuthenticated().user && isAuthenticated().user._id === post.postedBy._id && (
                         <>
-                            <Link to={`/post/edit/${post._id}`} className="btn btn-raised btn-warning btn-sm mr-5">
+                            <Link to={`/post/edit/${post._id}`} className="btn btn-raised btn-warning mr-5">
                                 Update Post
                             </Link>
                             <button onClick={this.deleteConfirmed} className="btn btn-raised btn-danger">
@@ -150,7 +150,7 @@ class SinglePost extends Component {
                                     <p className="mb-2 text-danger">Edit/Delete as an Admin</p>
                                     <Link
                                         to={`/post/edit/${post._id}`}
-                                        className="btn btn-raised btn-warning btn-sm mr-5"
+                                        className="btn btn-raised btn-warning  mr-5"
                                     >
                                         Update Post
                                     </Link>
@@ -177,7 +177,7 @@ class SinglePost extends Component {
 
         return (
             <div className="container">
-                <h2 className="display-2 mt-5 mb-5">{post.title}</h2>
+                <h2 className="display-4 mt-5 mb-2">{post.title}</h2>
 
                 {!post ? (
                     <div className="jumbotron text-center">

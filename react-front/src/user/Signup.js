@@ -84,48 +84,48 @@ class Signup extends Component {
     signupForm = (name, email, password, recaptcha) => (
         <form className="m-0 p-0">
             <div className="form-group">
-                <label className="text-muted m-0">Name</label>
+                <label className="text-primary m-0">Name</label>
                 <input
                     onChange={this.handleChange("name")}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={name}
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted m-0">Email</label>
+                <label className="text-primary m-0">Email</label>
                 <input
                     onChange={this.handleChange("email")}
                     type="email"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={email}
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted m-0">Password</label>
+                <label className="text-primary m-0">Password</label>
                 <input
                     onChange={this.handleChange("password")}
                     type="password"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={password}
                 />
             </div>
 
             <div className="form-group">
-                <label className="text-muted m-0">
+                <label className="text-primary m-0">
                     {recaptcha ? "Thanks. You got it!" : "What day is today?"}
                 </label>
 
                 <input
                     onChange={this.recaptchaHandler}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                 />
             </div>
 
             <button
                 onClick={this.clickSubmit}
-                className="btn btn-raised btn-primary"
+                className="btn btn-raised btn-primary mb-2"
             >
                 Submit
             </button>

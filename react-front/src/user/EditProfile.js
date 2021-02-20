@@ -117,7 +117,7 @@ class EditProfile extends Component {
           onChange={this.handleChange("photo")}
           type="file"
           accept="image/*"
-          className="form-control"
+          className="form-control border border-secondary"
         />
       </div>
       <div className="form-group">
@@ -125,7 +125,7 @@ class EditProfile extends Component {
         <input
           onChange={this.handleChange("name")}
           type="text"
-          className="form-control"
+          className="form-control border border-secondary"
           value={name}
         />
       </div>
@@ -134,7 +134,7 @@ class EditProfile extends Component {
         <input
           onChange={this.handleChange("email")}
           type="email"
-          className="form-control"
+          className="form-control border border-secondary"
           value={email}
         />
       </div>
@@ -144,7 +144,7 @@ class EditProfile extends Component {
         <textarea
           onChange={this.handleChange("about")}
           type="text"
-          className="form-control"
+          className="form-control border border-secondary"
           value={about}
           rows="4" cols="50"
         />
@@ -155,11 +155,11 @@ class EditProfile extends Component {
         <input
           onChange={this.handleChange("password")}
           type="password"
-          className="form-control"
+          className="form-control border border-secondary"
           value={password}
         />
       </div>
-      <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">
+      <button onClick={this.clickSubmit} className="btn btn-raised btn-primary btn-small">
         Update
       </button>
     </form>

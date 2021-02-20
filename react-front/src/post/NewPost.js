@@ -74,30 +74,30 @@ class NewPost extends Component {
     newPostForm = (title, body) => (
         <form>
             <div className="form-group">
-                <label className="text-muted">Post Photo</label>
+                <label className="text-primary">Post Photo</label>
                 <input
                     onChange={this.handleChange("photo")}
                     type="file"
                     accept="image/*"
-                    className="form-control"
+                    className="form-control border border-secondary"
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Title</label>
+                <label className="text-primary">Title</label>
                 <input
                     onChange={this.handleChange("title")}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={title}
                 />
             </div>
 
             <div className="form-group">
-                <label className="text-muted">Body</label>
+                <label className="text-primary">Body</label>
                 <textarea
                     onChange={this.handleChange("body")}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={body}
                     rows="7" cols="50"
                 />

@@ -84,33 +84,33 @@ class Signin extends Component {
     signinForm = (email, password, recaptcha) => (
         <form>
             <div className="form-group">
-                <label className="text-muted">Email</label>
+                <label className="text-primary">Email</label>
                 <input
                     onChange={this.handleChange("email")}
                     type="email"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={email}
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Password</label>
+                <label className="text-primary">Password</label>
                 <input
                     onChange={this.handleChange("password")}
                     type="password"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={password}
                 />
             </div>
 
             <div className="form-group">
-                <label className="text-muted">
+                <label className="text-primary">
                     {recaptcha ? "Thanks. You got it!" : "What day is today?"}
                 </label>
 
                 <input
                     onChange={this.recaptchaHandler}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                 />
             </div>
 
@@ -166,7 +166,7 @@ class Signin extends Component {
                 <p>
                     <Link
                         to="/forgot-password"
-                        className="btn btn-raised btn-danger m-0"
+                        className="btn btn-raised btn-danger mt-1"
                     >
                         {" "}
                         Forgot Password

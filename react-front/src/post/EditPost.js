@@ -95,7 +95,7 @@ class EditPost extends Component {
                     onChange={this.handleChange("photo")}
                     type="file"
                     accept="image/*"
-                    className="form-control"
+                    className="form-control border border-secondary"
                 />
             </div>
             <div className="form-group">
@@ -103,7 +103,7 @@ class EditPost extends Component {
                 <input
                     onChange={this.handleChange("title")}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={title}
                 />
             </div>
@@ -113,7 +113,7 @@ class EditPost extends Component {
                 <textarea
                     onChange={this.handleChange("body")}
                     type="text"
-                    className="form-control"
+                    className="form-control border border-secondary"
                     value={body}
                     rows="7" cols="50"
                 />
