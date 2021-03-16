@@ -29,7 +29,7 @@ A blog project build on MERN stack where user can share there thoughts and ideas
 This project is still on my current working list.
 
 Have some frontend design issues, and currently i am working on it.
-Planning to host this on digital Ocean, after fixing the issues.
+Planning to host this on digital Ocean or Netlify, after fixing the issues.
 
 To run this project on your local machine
 Follow the steps mentioned in the dedicated folders of frontend (react-front) and backend(nodeapi).
